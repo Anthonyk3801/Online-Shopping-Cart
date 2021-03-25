@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+   <head>
+       <meta charset="utf-8"/>
+       <meta name="viewport" content="width=device-width,initial-scale=0"/>
+       <title>Cart</title>
+       <link rel="stylesheet" type="text/css" href="assets/styles.css"/>
+       <script type = "text/javascript" 
+      src = "{{ url_for('assets', filename = 'message.js') }}" ></script>
+   </head>
+   <body>
+       <header><h1>Checkout</h1></header>
+        <table>
+            {% for key, value in cart.items() %}
+            <tr>
+                <th> {{ key }} </th>
+            </tr>
+            {% endfor %}
+        </table>
+        <form action = "http://localhost:5000/checkout" method = "POST">
+            <input class="button1" type = "button" onclick = "checkout()" value = "checkout" />
+        </form>
+   </body>
+</html>
