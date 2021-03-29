@@ -4,10 +4,18 @@ body {
     align-items: center;
 }
 
+h1{
+    text-align: center;
+}
+
+header {
+    width: 100%;
+}
+
 table {
     background-color: blue;
     border-style: solid;
-    font-size: 20px;
+    font-size: 18pt;
     width: 50%;
 }
 
@@ -31,7 +39,10 @@ p {
     background-color: blue;
     border-style: solid;
     border-width: 2px;
-    font-size: 20px;
     text-align: center;
-    width: 20%;
+    font-size: 22px;
+}
+
+div{
+    font-size: 22px;
 }
